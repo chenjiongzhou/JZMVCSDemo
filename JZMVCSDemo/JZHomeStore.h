@@ -8,6 +8,6 @@
 
 #import "JZBaseStore.h"
 
-@interface JZHomeStore : JZBaseStore
+@interface JZHomeStore : JZBaseStore 
 
 @end

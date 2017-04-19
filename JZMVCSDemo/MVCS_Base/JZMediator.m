@@ -7,7 +7,17 @@
 //
 
 #import "JZMediator.h"
+#import "JZBaseViewController.h"
 
 @implementation JZMediator
+
++ (UIViewController *)viewControllerWithScene:(JZBaseScene *)secne contex:(NSDictionary *)context {
+    
+    JZBaseStore *store = [[secne.storeClass alloc] init];
+    store.contextDict = context;
+    
+    UIViewController *viewController = [[secne.controllerClass alloc] initWithViewClass:secne.viewClass store:store];
+    return viewController;
+}
 
 @end

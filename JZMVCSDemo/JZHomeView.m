@@ -19,6 +19,17 @@
 
 @implementation JZHomeView
 
+- (instancetype)initWithFrame:(CGRect)frame{
+    
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        
+        
+    }
+    return self;
+}
+
 - (void)layoutSubviews {
 
     if (![self.tableView superview ]) {
@@ -64,6 +75,8 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor lightGrayColor];
+        
     }
     return _tableView;
     

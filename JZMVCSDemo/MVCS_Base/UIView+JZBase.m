@@ -10,4 +10,10 @@
 
 @implementation UIView (JZBase)
 
+- (void)setpuPipleline:(__kindof JZBasePipeline *)pipeline {
+    
+    NSException *extption = [NSException exceptionWithName:@"setpuPipleline_JZBase" reason:@"" userInfo:nil];
+    [extption raise];
+}
+
 @end

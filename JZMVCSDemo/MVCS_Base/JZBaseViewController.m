@@ -9,11 +9,12 @@
 #import "JZBaseViewController.h"
 #import "UIView+JZBase.h"
 #import "JZBaseStore.h"
+#import "JZHomeStore.h"
 
 @interface JZBaseViewController ()
 
 @property (nonatomic, strong) Class viewClass;
-@property (nonatomic, strong) JZBaseStore *store;
+@property (nonatomic, strong) JZHomeStore *store;
 
 
 @end
@@ -42,10 +43,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setupPipeline:_store.pipeline];
+//    [self setupPipeline:_store.pipelin];
 //    
 //    [self.view setupPipeline:_store.pipeline];
-//    
+//
     [self addObserver];
 }
 
